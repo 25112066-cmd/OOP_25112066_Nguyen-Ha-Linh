@@ -1,0 +1,23 @@
+#1
+import math
+radius = 5
+volume= 4/3 * math.pi * radius **3
+print ('1.Volume:',volume)
+#2
+book = 24.95
+discount = 0.4
+ship1 = 3
+ship2 = 0.75
+book_cost = book * (1 - discount) * 60
+shipping_cost = ship1 + ship2 * 59
+total = book_cost + shipping_cost
+print('2.The total wholesale cost for 60 copies:', total)
+#3
+easy_pace = 8 + 15/60
+tempo = 7 + 12/60
+total_time = 2 * easy_pace + 3 * tempo   # minutes
+start_time = 6 * 60 + 52   # convert 6:52 AM into minutes
+time_get_home = start_time + total_time
+hour = int(time_get_home // 60)
+minute = int(time_get_home % 60)
+print('3.You get home at:', hour, ':', minute)
